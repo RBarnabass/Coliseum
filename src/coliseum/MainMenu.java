@@ -6,8 +6,9 @@ import weapons.*;
 public class MainMenu {
 
     private RandomGenerator rg = new RandomGenerator();
+    private Scannering sc = new Scannering();
 
-    public int showStartMenu() throws InterruptedException {
+    public boolean showStartMenu() throws InterruptedException {
 
         Messenger.showMainMenu();
 
@@ -38,7 +39,7 @@ public class MainMenu {
 
                     case 0: {
 
-                        return 0;
+                        return Boolean.FALSE;
                     }
                 }
 
@@ -83,12 +84,13 @@ public class MainMenu {
 
                     case 6: {
 
-                        return 1;
+                        //return;
+                        break;
                     }
 
                     case 0: {
 
-                        return 0;
+                        return Boolean.FALSE;
                     }
                 }
 
@@ -180,7 +182,7 @@ public class MainMenu {
 
                             case 0: {
 
-                                return 0;
+                                return Boolean.FALSE;
                             }
                         }
                         break;
@@ -265,7 +267,7 @@ public class MainMenu {
 
                             case 0: {
 
-                                return 0;
+                                return Boolean.FALSE;
                             }
                         }
 
@@ -351,7 +353,7 @@ public class MainMenu {
 
                             case 0: {
 
-                                return 0;
+                                return Boolean.FALSE;
                             }
                         }
 
@@ -437,7 +439,7 @@ public class MainMenu {
 
                             case 0: {
 
-                                return 0;
+                                return Boolean.FALSE;
                             }
                         }
 
@@ -523,7 +525,7 @@ public class MainMenu {
 
                             case 0: {
 
-                                return 0;
+                                return Boolean.FALSE;
                             }
                         }
 
@@ -537,7 +539,7 @@ public class MainMenu {
 
                     case 0: {
 
-                        return 0;
+                        return Boolean.FALSE;
                     }
                 }
 
@@ -551,10 +553,10 @@ public class MainMenu {
 
             case 0: {
 
-                return 0;
+                return Boolean.FALSE;
             }
         }
 
-        return 1;
+        return Boolean.TRUE;
     }
 }

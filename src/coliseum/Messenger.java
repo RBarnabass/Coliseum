@@ -42,7 +42,7 @@ public class Messenger {
         System.out.println();
         System.out.println("    Choose your hero's weapon");
         System.out.println();
-        System.out.println(" >>> 1   * Axe *" + '\n' + " >>> 2   * Blade *" + '\n' + " >>> 3   * Bow *" + '\n' + " >>> 4   * Cudgel *" + '\n' + " >>> 5   * Dagger *" + '\n' + " >>> 6   * Halberd *" + '\n' + " >>> 7   * Rapier *" + '\n' + " >>> 8   * Spear *" + '\n' + " >>> 9   * Sword *" + '\n' + " >>> 10  * Tomahawk *" + '\n' + " >>> 11  * Yataghan *" + '\n' + " >>> 12  - Previous menu" + '\n' + " >>> 0   - I'm afraid");
+        System.out.println(" >>> 1   * Axe *" + '\n' + " >>> 2   * Blade *" + '\n' + " >>> 3   * Bow *" + '\n' + " >>> 4   * Cudgel *" + '\n' + " >>> 5   * Dagger *" + '\n' + " >>> 6   * Halberd *" + '\n' + " >>> 7   * Rapier *" + '\n' + " >>> 8   * Spear *" + '\n' + " >>> 9   * Sword *" + '\n' + " >>> 10  * Tomahawk *" + '\n' + " >>> 11  * Yataghan *" + '\n' + " >>> 12  - Main menu" + '\n' + " >>> 0   - I'm afraid");
         System.out.println();
     }
 
@@ -57,7 +57,7 @@ public class Messenger {
         System.out.println();
         System.out.println("    Choose your game");
         System.out.println();
-        System.out.println(" >>> 1  - Automatic computer game" + '\n' + " >>> 2  - Automatic multiplayer" + '\n' + " >>> 3   - Previous menu"  + '\n' + " >>> 0   - I'm afraid");
+        System.out.println(" >>> 1 - Automatic computer game" + '\n' + " >>> 2 - Automatic multiplayer" + '\n' + " >>> 3 - Previous menu"  + '\n' + " >>> 0 - I'm afraid");
     }
 
     public static void showDrownGame() {

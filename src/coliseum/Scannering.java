@@ -16,7 +16,7 @@ public class Scannering {
             return (tmp < 0 || tmp > 4) ? getInForMainMenu() : tmp;
         }
 
-        return 0;
+        throw new IllegalArgumentException();
     }
 
     public static int getInForHeroMenu() {
@@ -28,7 +28,7 @@ public class Scannering {
             return (tmp < 0 || tmp > 6) ? getInForHeroMenu() : tmp;
         }
 
-        return 0;
+        throw new IllegalArgumentException();
     }
 
     public static int getInForWeaponMenu() {
@@ -41,7 +41,7 @@ public class Scannering {
             return (tmp < 0 || tmp > 12) ? getInForWeaponMenu() : tmp;
         }
 
-        return 0;
+        throw new IllegalArgumentException();
     }
 
     public static int getInAutomaticGameMenu() {
@@ -54,6 +54,6 @@ public class Scannering {
             return (tmp < 0 || tmp > 3) ? getInAutomaticGameMenu() : tmp;
         }
 
-        return 0;
+        throw new IllegalArgumentException();
     }
 }

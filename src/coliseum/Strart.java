@@ -7,22 +7,27 @@ import static coliseum.Messenger.showMainGreatings;
 public class Strart {
 
     private MainMenu menu = new MainMenu();
-    private int result = 1;
+    private boolean result = Boolean.TRUE;
 
     public void startCycle() throws InterruptedException {
 
         showMainGreatings();
 
         try {
-            while (result != 0) {
+            while (result) {
 
                 result = menu.showStartMenu();
-                seeYouCoward();
             }
         } catch (InterruptedException e) {
 
             showDrownGame();
             startCycle();
+
+        } catch (IllegalArgumentException e) {
+
+            System.err.println(" Incorrect input !");
         }
+
+        seeYouCoward();
     }
 }
