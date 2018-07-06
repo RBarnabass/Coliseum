@@ -7,7 +7,7 @@ public class Scannering {
     private static Scanner scan = new Scanner(System.in);
     private static int tmp;
 
-    public static int getInForMainMenu() {
+    public static int getInForMainMenu() throws InterruptedException {
 
         if (scan.hasNextInt()) {
 
@@ -16,7 +16,7 @@ public class Scannering {
             return (tmp < 0 || tmp > 4) ? getInForMainMenu() : tmp;
         }
 
-        return getInForMainMenu();
+        return 0;
     }
 
     public static int getInForHeroMenu() {
@@ -28,7 +28,7 @@ public class Scannering {
             return (tmp < 0 || tmp > 6) ? getInForHeroMenu() : tmp;
         }
 
-        return getInForHeroMenu();
+        return 0;
     }
 
     public static int getInForWeaponMenu() {
@@ -41,7 +41,7 @@ public class Scannering {
             return (tmp < 0 || tmp > 12) ? getInForWeaponMenu() : tmp;
         }
 
-        return getInForWeaponMenu();
+        return 0;
     }
 
     public static int getInAutomaticGameMenu() {
@@ -54,6 +54,6 @@ public class Scannering {
             return (tmp < 0 || tmp > 3) ? getInAutomaticGameMenu() : tmp;
         }
 
-        return getInAutomaticGameMenu();
+        return 0;
     }
 }

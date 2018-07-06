@@ -7,14 +7,14 @@ import static coliseum.Messenger.showMainGreatings;
 public class Strart {
 
     private MainMenu menu = new MainMenu();
-    private boolean result = Boolean.TRUE;
+    private int result = 1;
 
     public void startCycle() throws InterruptedException {
 
         showMainGreatings();
 
         try {
-            while (result) {
+            while (result != 0) {
 
                 result = menu.showStartMenu();
                 seeYouCoward();

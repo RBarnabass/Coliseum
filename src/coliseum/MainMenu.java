@@ -7,7 +7,7 @@ public class MainMenu {
 
     private RandomGenerator rg = new RandomGenerator();
 
-    public boolean showStartMenu() throws InterruptedException {
+    public int showStartMenu() throws InterruptedException {
 
         Messenger.showMainMenu();
 
@@ -38,7 +38,7 @@ public class MainMenu {
 
                     case 0: {
 
-                        return Boolean.FALSE;
+                        return 0;
                     }
                 }
 
@@ -83,12 +83,12 @@ public class MainMenu {
 
                     case 6: {
 
-                        return showStartMenu();
+                        return 1;
                     }
 
                     case 0: {
 
-                        return Boolean.FALSE;
+                        return 0;
                     }
                 }
 
@@ -180,7 +180,7 @@ public class MainMenu {
 
                             case 0: {
 
-                                return Boolean.FALSE;
+                                return 0;
                             }
                         }
                         break;
@@ -265,7 +265,7 @@ public class MainMenu {
 
                             case 0: {
 
-                                return Boolean.FALSE;
+                                return 0;
                             }
                         }
 
@@ -351,7 +351,7 @@ public class MainMenu {
 
                             case 0: {
 
-                                return Boolean.FALSE;
+                                return 0;
                             }
                         }
 
@@ -437,7 +437,7 @@ public class MainMenu {
 
                             case 0: {
 
-                                return Boolean.FALSE;
+                                return 0;
                             }
                         }
 
@@ -523,7 +523,7 @@ public class MainMenu {
 
                             case 0: {
 
-                                return Boolean.FALSE;
+                                return 0;
                             }
                         }
 
@@ -537,7 +537,7 @@ public class MainMenu {
 
                     case 0: {
 
-                        return Boolean.FALSE;
+                        return 0;
                     }
                 }
 
@@ -551,10 +551,10 @@ public class MainMenu {
 
             case 0: {
 
-                return Boolean.FALSE;
+                return 0;
             }
         }
 
-        return showStartMenu();
+        return 1;
     }
 }
