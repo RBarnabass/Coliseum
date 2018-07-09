@@ -7,7 +7,7 @@ public class Scannering {
     private static Scanner scan = new Scanner(System.in);
     private static int tmp;
 
-    public static int getInForMainMenu() throws InterruptedException {
+    public static int getInForMainMenu() {
 
         if (scan.hasNextInt()) {
 

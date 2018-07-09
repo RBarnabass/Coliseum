@@ -1,8 +1,8 @@
 package coliseum;
 
-import static coliseum.Messenger.seeYouCoward;
-import static coliseum.Messenger.showDrownGame;
-import static coliseum.Messenger.showMainGreatings;
+import menu.MainMenu;
+
+import static coliseum.Messenger.*;
 
 public class Strart {
 

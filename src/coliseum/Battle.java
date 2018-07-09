@@ -6,9 +6,9 @@ public class Battle {
 
     private static int kickCount1 = 0;
     private static int kickCount2 = 0;
-    private static int index = 3;
+    private static final int index = 3;
 
-    public static Warrior letFight(Warrior warrior1, Warrior warrior2, int firstKicker) throws InterruptedException {
+    public static Warrior letsFight(Warrior warrior1, Warrior warrior2, int firstKicker) throws InterruptedException {
 
         System.out.println();
         double kick1 = warrior1.getHarm() - warrior2.getProtection();
@@ -91,26 +91,14 @@ public class Battle {
 
         Thread.sleep(700);
 
-        if (warrior1.isAlive()) {
-
-            return warrior1;
-
-        } else {
-
-            return warrior2;
-        }
+        return warrior1.isAlive() ? warrior1 : warrior2;
     }
 
     private static int getViolence() {
 
         int i = (int) (Math.random() * 5);
 
-        if (i <= 0 || i > 2) {
-
-            return 1;
-        }
-
-        return i;
+        return i <= 0 || i > 2 ? 1 : i;
     }
 
     private static double getExtraHarm() {
